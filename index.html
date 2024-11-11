@@ -105,18 +105,23 @@
         <div class="main__container">
             <div class="main__separator">
                 <div class="slider">
-                    <img class="slider__img" src="img/Group 1014.svg" alt="err">
-                    <div class="slider__leftSwitch">
+                    <div class="slider__line">
+                        <img class="slider__img" src="img/Group 1014.svg" alt="err">
+                        <img class="slider__img" src="img/slide2.jpg" alt="err">
+                        <img class="slider__img" src="img/slide3.jpg" alt="err">
+                        <img class="slider__img" src="img/slide4.jpg" alt="err">
+                    </div>
+                    <button class="slider__leftSwitch" onclick="o2.slider.leftSwitch()" >
                         <div><img src="img/Icon 22.svg" alt="err"></div>
-                    </div>
-                    <div class="slider__rightSwitch">
+                    </button>
+                    <button class="slider__rightSwitch" onclick="o2.slider.rightSwitch()">
                         <div><img src="img/Icon 21.svg" alt="err"></div>
-                    </div>
+                    </button>
                     <div class="slider__counter">
-                        <div class="count "></div>
-                        <div class="count count_notActive"></div>
-                        <div class="count count_notActive"></div>
-                        <div class="count count_notActive"></div>
+                        <div class="count count_active"></div>
+                        <div class="count"></div>
+                        <div class="count"></div>
+                        <div class="count"></div>
                     </div>
                 </div>
                 <div class="main__bookMob">            
@@ -513,7 +518,7 @@
             <div class="footer__mobile">
                 <div class="footer__meadiaMob">
                     <div class="footer__icon footer__icon_purple"><img src="img/FacebookLite.svg" alt="err"></div>
-                    <div class="footer__icon footer__icon_blue"><img src="/img/VK.svg" alt="err"></div>
+                    <div class="footer__icon footer__icon_blue"><img src="img/VK.svg" alt="err"></div>
                     <div class="footer__icon footer__icon_red"> <img src="img/Twitter 20x20 Dark.svg" alt="err"></div>
                 </div>
             </div>
@@ -533,7 +538,7 @@
                 </div>
                 <div class="footer__meadia">
                     <div class="footer__icon"><img src="img/Facebook.svg" alt="err"></div>
-                    <div class="footer__icon"><img src="/img/Instagram.svg" alt="err"></div>
+                    <div class="footer__icon"><img src="img/Instagram.svg" alt="err"></div>
                     <div class="footer__icon"> <img src="img/Twitter.svg" alt="err"></div>
                 </div>
             </div>
@@ -646,5 +651,6 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

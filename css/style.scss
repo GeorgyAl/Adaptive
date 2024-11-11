@@ -234,10 +234,16 @@ html, body
     padding-bottom: 46.67%;
     position: relative;
     border-radius: 5px;
-    &__img
+    display: flex;
+    overflow: hidden;
+    &__line
     {
-        width: 100%;
-        position: absolute;
+        width: 750px;
+        height: 350px;
+        position: relative;
+        display: flex;
+        left: 0;
+        transition: 1s;
     }
     &__leftSwitch
     {
@@ -251,6 +257,8 @@ html, body
         position: absolute;
         top: 155px;
         left: 27px;
+        border: none;
+        cursor: pointer;
     }
     &__rightSwitch
     {
@@ -264,7 +272,8 @@ html, body
         position: absolute;
         top: 155px;
         right: 28px;
-
+        border: none;
+        cursor: pointer;
     }
     &__counter
     {
@@ -279,12 +288,12 @@ html, body
 {
     width: 25px;
     height: 2px;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.5019607843);
     margin-right: 5px;
 }
-.count_notActive
+.count_active
 {
-    background-color: #FFFFFF80;
+    background-color: #FFFFFF;
 }
 .bookDay
 {
@@ -476,7 +485,7 @@ html, body
     width: 1141px;
     background-color: #FFFFFF;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 15px;
     &__header
     {
         display: flex;
@@ -1272,7 +1281,7 @@ html, body
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 15px;
     position: relative;
     &__vector
     {
@@ -1409,7 +1418,7 @@ html, body
     {
         width: 320px;
         height: 200px;
-        background-image: url(/img/image\ 214.svg);
+        background-image: url(../img/image\ 214.png);
         border-radius: 5px;
     }
     &__data
@@ -1470,7 +1479,7 @@ html, body
         margin-left: 20px;
         width: 320px;
         height: 200px;
-        background-image: url(/img/Rectangle\ 932.svg);
+        background-image: url(../img/Rectangle\ 932.svg);
         border-radius: 5px;
     }
     &__data
@@ -1532,7 +1541,7 @@ html, body
         margin-left: 20px;
         width: 320px;
         height: 200px;
-        background-image: url(/img/Rectangle\ 933.svg);
+        background-image: url(../img/Rectangle\ 933.svg);
         border-radius: 5px;
     }
     &__data
